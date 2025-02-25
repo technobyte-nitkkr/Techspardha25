@@ -9,6 +9,7 @@ import mexpert from "public/TeamLogos/Mexperts.svg"
 import micro from "public/TeamLogos/MicroBus.svg"
 import startup from "public/TeamLogos/Startup.svg"
 import techno from "public/TeamLogos/technoLogo.svg"
+import anant from "public/TeamLogos/Anant.png"
 
 export const TEAMS = {
 	Aeromodeling: {
@@ -181,5 +182,21 @@ export const TEAMS = {
 			},
 		],
 		logo: techno,
+	},
+	Anant: {
+		teamName: "Anant",
+		contacts: [
+			{
+				post: "Convenor",
+				imageURL: "https://i.ibb.co/2qbwFNh/Debatreya2.jpg",
+				name: "Debatreya",
+			},
+			{
+				imageURL: "https://i.ibb.co/2qbwFNh/Debatreya2.jpg",
+				post: "Co-Convenor",
+				name: "Utkarsh Swaroop Srivastava",
+			},
+		],
+		logo: anant,
 	},
 };
