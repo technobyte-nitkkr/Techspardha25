@@ -40,7 +40,7 @@ export default function Countdown() {
         };
     }
 
-    const eventDate = new Date('2025-02-14T11:59:00');
+    const eventDate = new Date('2025-10-13T00:00:00');
     let now = new Date();
     let timeLeftSec = Math.floor((eventDate - now) / 1000);
 

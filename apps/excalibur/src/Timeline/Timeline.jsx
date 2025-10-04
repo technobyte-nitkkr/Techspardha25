@@ -65,7 +65,7 @@ export default function Timeline() {
         <Card
           key={1}
           initial={2000}
-          date={"7th Feb 03:00 PM"}
+          date={"5th Oct 00:00 AM"}
           name={"Registration Starts"}
           detail={
             "Register using the register button by submitting your details."
@@ -74,14 +74,14 @@ export default function Timeline() {
         <Card
           key={2}
           initial={-2000}
-          date={"14th Feb 11:59 PM"}
+          date={"12th Oct 11:59 PM"}
           name={"Registration Ends"}
           detail={"We will be ending the registeration right after it"}
         />
         <Card
           key={3}
           initial={2000}
-          date={"14th Feb 11:59 PM"}
+          date={"13th Oct 00:00 AM"}
           name={"Abstract Submission Round"}
           detail={
             "Submit your ideas in form of an abstract, including your problem, solution, approach and techstacks, at unstop."
@@ -90,7 +90,7 @@ export default function Timeline() {
         <Card
           key={4}
           initial={-2000}
-          date={"15th Feb 11:59 PM"}
+          date={"15th Oct 11:59 PM"}
           name={"Ideation Results"}
           detail={
             "Selected teams can start their coding. Mentors will be assigned to selected teams."
@@ -99,23 +99,41 @@ export default function Timeline() {
         <Card
           key={5}
           initial={2000}
-          date={"21st Feb 12:00 AM"}
-          name={"Mentor's Evaluation Round"}
-          detail={"This will be the first progress check of your project by the team's mentor."}
+          date={"21st Oct 00:00 AM"}
+          name={"First Evaluation Round 1"}
+          detail={
+            "Demonstrate your project including your problem, solution, approach and techstacks, in front of our judges."
+          }
         />
         <Card
           key={6}
           initial={-2000}
-          date={"23rd Feb 11:59 PM"}
+          date={"23rd Oct 11:59 PM"}
+          name={"Round 1 Results"}
+          detail={
+            "Teams qualifying for the next stage will be announced."
+          }
+        />
+        <Card
+          key={7}
+          initial={2000}
+          date={"25th Oct 12:00 AM"}
+          name={"Mentor's Evaluation Round"}
+          detail={"This will be the first progress check of your project by the team's mentor."}
+        />
+        <Card
+          key={8}
+          initial={-2000}
+          date={"26th Oct 11:59 PM"}
           name={"Mentor's Evaluation Results"}
           detail={
             "Top 10 selected teams head for the finale. Teams need to be present on campus for finale."
           }
         />
         <Card
-          key={7}
+          key={9}
           initial={2000}
-          date={"28th Feb 12:00 AM"}
+          date={"28th Oct 12:00 AM"}
           name={"Excalibur Finale"}
           detail={"Submit and present your project before our judges."}
         />
