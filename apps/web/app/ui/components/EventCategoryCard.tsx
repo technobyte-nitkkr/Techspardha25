@@ -1,4 +1,18 @@
 import Image from "next/image";
+
+function isValidUrl(string: string): boolean {
+    try {
+        // Check if it's a relative path starting with /
+        if (string.startsWith('/')) {
+            return true;
+        }
+        // Check if it's a valid absolute URL
+        new URL(string);
+        return true;
+    } catch (_) {
+        return false;
+    }
+}
 export interface EventCategoryCardProps {
 	name: string;
 	img: string;
@@ -8,7 +22,7 @@ export default function EventCategoryCard({
 	name,
 	img,
 }: EventCategoryCardProps) {
-	img = img || "/events.png";
+	img = isValidUrl(img) ? img : "/events.png";
 
 	const handleUrl = () => {
 		window.location.href = `/events`;
